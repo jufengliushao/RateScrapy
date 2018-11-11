@@ -1,0 +1,2 @@
+# RateScrapy
+Daily exchange rate 
