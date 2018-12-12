@@ -3,10 +3,9 @@ class HLModel():
     """
     从中国银行的汇率获取的数据
     """
-    def __init__(self, approvedTime, approvedTimeEn, bannerCss, bannerPic, bp, bpDouble, foreignCName, price, vrtCode, vrtEName, vrtName):
-            self.approvedTime = approvedTime
-            self.approvedTimeEn = approvedTimeEn
-            self.bannerCss = bannerCss
+    def __init__(self, price, bp, vrtEName, foreignCName, bpDouble, bannerPic, ts, update, vrtName, vrtCode):
+            self.timescla = ts # 更新时间戳
+            self.update = update  # 更新日期 - 可以直接显示
             self.bannerPic = bannerPic # 图片后缀
             self.bp = bp # 相比上涨还是下降 + 上涨 - 下降
             self.bpDouble = bpDouble # 同上
